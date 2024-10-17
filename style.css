@@ -1,0 +1,92 @@
+/* Reset de CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Selector + propiedad + valor
+
+
+selector{
+propiedad: valor
+}
+*/
+
+p{
+    color:blue;
+    /* nombre de color hexadecimal, rgb y rgba*/
+    /*color: #b2d6f9;*/
+    /*color: rgb(0, 0, 255);*/
+    color: rgba(0, 0, 0, 1);
+    /* Unidades de medida | px em rem % */
+    font-size: 20px;
+    margin: 20px;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+body{
+    background-color: #f0f0f0;
+}
+
+/* Estilo aplicado al elemento padre <section> */
+section {
+    color: red;
+    font-family: Arial, sans-serif;
+    }
+    
+    /* Estilo específico para el elemento hijo <h2> */
+    section h2 {
+    color: green;
+    font-size: 24px;
+    }
+    
+    /* Estilo específico para el elemento hijo <p> */
+    section p {
+    font-size: 16px;
+    }
+
+    div{
+        color: blueviolet;
+    }
+   
+    /* Especificidad*/
+
+    div span{
+        color: green;
+    }
+    span{
+        color: brown;
+    }
+
+    .titulos{
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    #contacto{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .titulo-servicios{
+    color: white;
+    text-transform: uppercase;
+        font-size: 24px;/* absoluta*/
+    }
+    .parafo-servicios{
+        color: red;
+        font-style: italic;
+        font-size: 1.5em; /*relativa | al tamaño de fuente del elemento padre|
+         Rem es relativo al tamaño de la fuente del elemento raiz*/
+         font-weight: bold;
+         font-family: "Nunito Sans", sans-serif;
+         letter-spacing: 1px;
+
+       }

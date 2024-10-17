@@ -1,0 +1,187 @@
+<!DOCTYPE html> <!-- la que define la version y estructura del documento -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- el tipo de simbolos que podes utilizar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala o diseño responsive -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Mi primera pagina</title> <!-- la que le da el nombre a la web en la pestaña -->
+</head>
+
+<body>
+    <!-- Elementos bloque y linea -->
+
+    <!-- Encabezados | H1 solo puedo utilizar uno solo por archivo | El orden de jerarquia de los encabezados va desde el H1 al H6, y si pasas del H1 al H4 despues no volver a H3 o posterirores-->
+    <header>
+        <h1>Titulo</h1>
+    </header>
+    <section>
+        <h6>Subtitulo</h6>
+    </section>
+
+    <!-- Parrafos -->
+    <p>Anashe Anashe Anashe <br> <em><strong> Texto en Negrita </strong> </em> </p>
+    <br> <!-- Salto de linea -->
+
+
+    <!-- Espacios, enfasis y bold -->
+    <em>Anashe</em> <!-- cursiva la frase -->
+    <strong> Texto en Negrita </strong>
+
+    <!-- Semantica -->
+    <header>
+        <nav></nav>
+
+    </header>
+    <section>
+        <h2></h2>
+    </section>
+    <footer>
+        <a href=""></a>
+    </footer>
+
+    <!-- div y span -->
+    <div></div> <!-- Los elementos en bloque por default-->
+    <span></span> <!-- Los elementos en linea por default -->
+
+    <!-- Enlaces -->
+    <!-- Enlace absoluto | el que nos direccion a una web externa -->
+    <a href="https://google.com">
+        ver mas
+    </a>
+    <br>
+    <!-- Enlace relativo | los enlaces relativos nos direccionan a un archivo dentro del mismo proyecto-->
+    <a href="Page/Servicios.html">
+        ver nuestros servicios
+    </a>
+    <br>
+    <a href="Page/Ejemplo_sitio_web.html">
+        Ejemplo
+    </a>
+    <br>
+    <!-- Enlace interno | -->
+    <a href="#contacto">
+        Hablemos
+    </a>
+    <br>
+    <section id="contacto">
+
+    </section>
+
+    <!-- Enlace relativo + interno -->
+    <a href="Page/Servicios.html#plataforma">
+        Nuestra plataforma
+    </a>
+
+
+    <!-- Imagenes, video , audio e Iframe -->
+
+    <!-- SRC es source - ALT
+           
+          1- Texto descriptivo por si se rompe la ruta dele elemento
+          2 - SEO posicionamiento organico 
+          3 - Accesibilidad -> porque explica de que se trata el elemento y lo traduce en el sistema de apoyo -->
+
+    <img src="Images/Fotito.png" alt="Certificado de finalizacion de curso">
+
+    <video src=""></video>
+    <audio src=""></audio>
+
+    <!-- iFrame-> Un extracto de codigo html de la web de donde estas extrayendo el elemento multimedia -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.5994020778926!2d-58.51014642271146!3d-34.462315573005306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1d2c7266c11%3A0x397de65d601309ab!2sLo%20De%20Facu!5e0!3m2!1ses-419!2sar!4v1726514303404!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Listas desordenadas -->
+    <ul>
+        <li>Carne</li>
+        <li>Huevos</li>
+        <li>Verduras</li>
+    </ul>
+
+    <!--Listas ordenadas -->
+    <ol>
+        <li>mezclar los huevos</li>
+        <li>comer torta</li>
+        <li>a dormir</li>
+    </ol>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.HTML">Inicio</a>
+                </li>
+                <li>
+                    <a href="#contacto">Servicios</a>
+                </li>
+                <li>
+                    <a href="https://google.com">Prensa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tablas -->
+    <table>
+        <!-- tr nos da el inicio o fin de una fila -->
+        <tr>
+            <th><!-- encabezados -->
+                Informacion
+            </th>
+            <!-- td inicializa las columnas -->
+            <td>
+                fecha
+            </td>
+            <td>
+                nombre
+            </td>
+            <td>
+                direccion
+            </td>
+        </tr>
+    </table>
+    <!-- formularios -->
+    <form action="/submit" method="post"> <!-- Etiqueta contenedora-->
+        <label for="nombre">Mi Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+
+        <label for="genero">Genero</label>
+        <input type="radio" name="" id="">
+        <label for="">Hombre</label>
+
+        <input type="radio" name="" id="">
+        <label for="">Mujer</label>
+
+        <input type="radio" name="" id="">
+        <label for="">Prefiero no decirlo</label>
+
+        <label for="subscribe">Subscribirse:</label>
+        <input type="checkbox" name="subscribe" id="subscribe">
+
+        <label for="Pais"></label>
+        <select name="" id="">
+            <option value="">Brasil</option>
+            <option value="">Argentina</option>
+            <option value="">Uruguay</option>
+        </select>
+
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>

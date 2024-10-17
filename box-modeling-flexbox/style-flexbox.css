@@ -1,0 +1,176 @@
+.block-element {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.inline-element {
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
+
+.inline-block-element {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 10px;
+}
+
+.static-box {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.relative-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.sticky-container {
+    height: 1000px;
+    background-color: lightyellow;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 10px;
+    background-color: lightpink;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    margin-top: 60px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.flex-container div{
+    padding: 10px;
+}
+
+.box{
+    
+    width: 20%;
+    height: 10vh;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 10px;
+    flex-grow: 0;
+}
+
+.flex-container2 { display: flex; } .item1 { padding: 10px; background-color: lightcoral; margin: 5px; }
+
+.flex-container3 {
+    display: flex;
+}
+.item2 {
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.flex-container4 {
+    display: flex;
+    width: 300px;
+}
+.item3 {
+    width: 200px;
+    padding: 10px;
+    background-color: lightgreen;
+    margin: 5px;
+}
+
+.flex-container5 {
+    display: flex;
+}
+.item4 {
+    padding: 10px;
+    background-color: lightpink;
+    margin: 5px;
+}
+
+.navbar{
+    background-color: aqua;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li{
+    margin:0 15px ;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.main-container{
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    width: 75%;
+    background-color: #eaeaea;
+    padding: 20px;
+}
